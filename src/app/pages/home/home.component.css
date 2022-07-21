@@ -1,0 +1,130 @@
+/* content */
+.main-content-container {
+  display: flex;  
+  justify-content: center;
+  height: auto;
+}
+
+.content-container {
+  width: 70%;
+  margin-top: 50px;
+  background: rgb(209, 224, 250);
+}
+
+.famous-content {
+  width: 55%;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.content-img {
+  height: 400px;
+}
+
+.content-img:hover {
+  transform: scale(1.01);
+}
+
+
+
+.list-famous-content {
+  width: 40%;
+  float: right;
+  position: relative;
+  display: block;
+}
+
+.list-content {
+  list-style-type: none;
+}
+
+/* doi tac */
+.partner {
+    float: left;
+    width: 100%;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding: 35px 30px;  
+    margin-top: 250px;
+}
+
+.partner-body {
+  width: 100%;
+}
+
+.partner-body-item {
+  float: left;
+  width: 220px;
+  background-color: #fff;
+  padding: 16px;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 25px; 
+}
+
+img {
+  height: 72px;
+  width: 100%;
+}
+  
+@mixin white-gradient {
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-250px * 6));
+    }
+}
+.slider {
+    height: 105px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;   
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 12);
+    animation-timing-function: steps(20 end);
+}
+
+.slide {
+  width: 20%;
+}
+
+.slider::before,
+.slider::after {
+  @include white-gradient;
+  content: "";
+  height: 105px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+  
+  .slider:hover>div {
+    animation-play-state: paused;
+  }
+  
