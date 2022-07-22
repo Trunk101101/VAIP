@@ -22,12 +22,6 @@
     padding: 2px;
 }
 
-.on-top {
-    display: flex;
-    position: sticky;
-    top: 0;
-}
-
 .logo {
     height: 120px;
     padding: 4px;
