@@ -20,3 +20,15 @@ html {
 .mb-10 {
     margin-bottom: 10px;
 }
+
+.w-10 {
+    width: 10%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.h-350 {
+    height: 350px;
+}

@@ -43,6 +43,7 @@
 .list-content {
   list-style-type: none;
   padding: 0;
+  margin-right: 8px;
 }
 
 .list-name {
@@ -59,8 +60,8 @@
 }
 
 .content-fomous-img {
-  height: 54px;
-  width: 20%;
+  max-height: 54px;
+  width: 95px;
   margin-right: 8px;
 }
 
@@ -71,6 +72,8 @@
 .link-content:hover {
   color: rgb(255, 101, 101) !important;
 }
+
+
 
 /* doi tac */
 .partner {
