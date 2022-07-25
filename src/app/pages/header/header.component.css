@@ -6,6 +6,7 @@
 
 .container-fluid {
     justify-content: end;
+    padding-left: 4%;
 }
 
 #btnsidebarToggle {
@@ -47,37 +48,53 @@
 /* logo */
 .logo-container {
     width: 100%;
-    background-color: rgb(178, 80, 0);
+    background-color: #8d0003;
     height: 130px;
 }
 
-.logo-img {
-    padding: 8px;
-    margin-left: 100px;
+.logo-img { 
+    margin-left: 8%;
     height: 100%;
+    margin-top: 8px;
+    transform: scale(1.25);
 }
 
 
 /* Menu */
-@media only screen and (min-width: 780px){
+@media (min-width: 992px){
     .dropdown:hover .dropdown-menu {
         position: absolute;
         display: block;
     }
+    
 }
 
+/* .navbar-light .navbar-nav .nav-link, */
 .bg-menu {
-    background-color: rgb(178, 100, 0);
+    background-color: #971b1e;
 }
 
 .dropdown-item:hover {
-    background: #ccc;
+    background: #971b1e;
 }
 
 .nav-item {
     padding: 0 10px;
 }
 
+
+/* responsive */
+@media (max-width: 690px) {
+    .d-flex .form-control {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) { 
+    .navbar-mobile {
+        display: none;
+    }
+}
 
 
 

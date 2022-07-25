@@ -1,0 +1,15 @@
+.title-container {
+    justify-content: center;
+    width: 70%;
+}
+
+.title {
+    width: 80%;
+    justify-content: start;
+}
+
+.filter {
+    width: 20%;
+    justify-content: end;
+}
+

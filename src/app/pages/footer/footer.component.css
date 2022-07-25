@@ -1,6 +1,13 @@
 .footer {
-    width: 100%;
+    width: 90%;
     min-height: 320px;
     bottom: 40px;
     left: 0;
+    padding-left: 10%;
+}
+
+@media (max-width: 564px) {
+    .footer {
+        justify-content: center;
+    }
 }

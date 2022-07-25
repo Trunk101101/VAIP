@@ -6,10 +6,10 @@
 }
 
 .content-container {
-  width: 75%;
+  width: 70%;
   margin-top: 40px;
-  background: rgb(209, 224, 250);
-  height: 580px;
+  /* background: rgb(209, 224, 250); */
+  height: auto;
 }
 
 .famous-content {
@@ -25,6 +25,10 @@
 
 .content-img:hover {
   transform: scale(1.01);
+}
+
+.title-content {
+  font-size: 18px;
 }
 
 .title-content:hover {
@@ -44,24 +48,36 @@
   list-style-type: none;
   padding: 0;
   margin-right: 8px;
+  line-height: 18px;
+}
+
+.watch-all {
+  margin-bottom: 0;
+}
+
+.watch-all:hover {
+  color: #971b1e;
 }
 
 .list-name {
-  background-color: antiquewhite;
+  background-color: #971b1e;
+  color: #fff;
   display: inline;
   border-top-right-radius: 36px;
 }
 
 .list-famous-content-item {
-  height: 70px;
-  background-color: #f2f2f2;
+  height: 110px;
+  font-size: 18px;
   border-radius: 4px;
   display: flex;
+  line-height: 24px;
 }
 
+
+
 .content-fomous-img {
-  max-height: 54px;
-  width: 95px;
+  width: 110px;
   margin-right: 8px;
 }
 
@@ -73,6 +89,26 @@
   color: rgb(255, 101, 101) !important;
 }
 
+.list-content-item {
+  height: 62px;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  line-height: 24px;
+}
+
+.ads-img {
+  height: 100%;
+}
+
+.giaothuong-img {
+  height: 200px;
+  /* padding-right: 100px; */
+}
+
+.giaothuong-img:hover {
+  transform: scale(1.01);
+}
 
 
 /* doi tac */
@@ -164,3 +200,58 @@ img {
     animation-play-state: paused;
   }
   
+/* responsive */
+@media (max-width: 1400px){
+  .content-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px){
+  .famous-content {
+    width: 100%;
+  }
+  .list-famous-content {
+    display: none;
+  }
+  .content-container {
+    margin-right: 24px;
+  }
+  .content-fomous-img {
+    display: none;
+  }
+  .content-img {
+    height: 244px;
+  }
+  .giaothuong-img {
+    padding-right: 24px;
+  }
+  .wrap-text-content,
+  .title-content-famous {
+    padding: 0 14px;
+  }
+  .more-btn {
+    margin-left: 14px;
+  }
+  .title {
+    padding-left: 12px;
+  }
+  .ICT-new {
+    padding-right: 36px;
+  }
+  .most-read {
+    display: none;
+  }
+  .mt-cs {
+    padding-left: 24px;
+  }
+  .ads-img {
+    display: none;
+  }
+  .list-content {
+    margin-left: 12px;
+  }
+  .card-container {
+    margin-left: 12px;
+  }
+}
